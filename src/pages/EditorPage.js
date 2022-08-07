@@ -113,11 +113,12 @@ const EditorPage = () => {
                     </div>
                 </div>
 
-           <button className="btn copyBtn" onClick={copyRoomId}>                </button>
+           {/* <button className="btn copyBtn" onClick={copyRoomId}>                </button> */}
 
-                 <button>   <a class="room-meet-link" href="https://codeon.daily.co/codeon" target="_blank">Join Room </a>
+                 <button className="btn leaveBtn">   <a class="room-meet-link" href="https://codeon.daily.co/codeon" target="_blank">Join meet </a>
             
                 </button>
+                <br/>
                 <button className="btn copyBtn" onClick={copyRoomId}>
                     Copy ROOM ID
                 </button>
