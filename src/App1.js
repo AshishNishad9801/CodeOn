@@ -3,7 +3,6 @@ import './App.css';
 
 import Login from './Login'
 import Hero from './Hero'
-
 import fire from './fire'
 
 const App1 = () => {
@@ -112,4 +111,3 @@ const App1 = () => {
 };
 
 export default App1;
-
