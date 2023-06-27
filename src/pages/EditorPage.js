@@ -1,6 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
 import toast from 'react-hot-toast';
-import ACTIONS from '../Actions';
 import Client from '../components/Client';
 import Editor from '../components/Editor';
 import { initSocket } from '../socket';
@@ -31,21 +30,21 @@ const EditorPage = () => {
                 reactNavigator('/');
             }
 
-            socketRef.current.emit(ACTIONS.JOIN, {
+            socketRef.current.emit('join', {
                 roomId,
                 username: location.state?.username,
             });
 
             // Listening for joined event
             socketRef.current.on(
-                ACTIONS.JOINED,
+                'joined',
                 ({ clients, username, socketId }) => {
                     if (username !== location.state?.username) {
                         toast.success(`${username} joined the room.`);
                         console.log(`${username} joined`);
                     }
                     setClients(clients);
-                    socketRef.current.emit(ACTIONS.SYNC_CODE, {
+                    socketRef.current.emit('sync-code', {
                         code: codeRef.current,
                         socketId,
                     });
@@ -54,7 +53,7 @@ const EditorPage = () => {
 
             // Listening for disconnected
             socketRef.current.on(
-                ACTIONS.DISCONNECTED,
+                'disconnected',
                 ({ socketId, username }) => {
                     toast.success(`${username} left the room.`);
                     setClients((prev) => {
@@ -68,8 +67,8 @@ const EditorPage = () => {
         init();
         return () => {
             socketRef.current.disconnect();
-            socketRef.current.off(ACTIONS.JOINED);
-            socketRef.current.off(ACTIONS.DISCONNECTED);
+            socketRef.current.off('joined');
+            socketRef.current.off('disconnected');
         };
     }, []);
 
