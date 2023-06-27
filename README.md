@@ -90,23 +90,23 @@ Follow these steps to run the CodeOn website on your local machine:
 
 3. Set up the required environment variables by creating a `.env` file. It should follow the below format:
 
-`REACT_APP_BACKEND_URL=`
+`VITE_BACKEND_URL=`
 
-`REACT_APP_FIREBASE_API_KEY=`
+`VITE_FIREBASE_API_KEY=`
 
-`REACT_APP_FIREBASE_AUTH_DOMAIN=`
+`VITE_FIREBASE_AUTH_DOMAIN=`
 
-`REACT_APP_FIREBASE_PROJECT_ID=`
+`VITE_FIREBASE_PROJECT_ID=`
 
-`REACT_APP_FIREBASE_STORAGE_BUCKET=`
+`VITE_FIREBASE_STORAGE_BUCKET=`
 
-`REACT_APP_FIREBASE_MESSAGING_SENDER_ID=`
+`VITE_FIREBASE_MESSAGING_SENDER_ID=`
 
-`REACT_APP_FIREBASE_APP_ID=`
+`VITE_FIREBASE_APP_ID=`
 
-`REACT_APP_FIREBASE_MEASUREMENT_ID=`
+`VITE_FIREBASE_MEASUREMENT_ID=`
   
 
 5. Run `npm run build`
 
-6. To start the server, run `nodemon server.js` in the project's root directory (By default it runs on localhost:/5000)
+6. To start the server, run `nodemon server.js` in the project's root directory (By default it runs on localhost:5000)

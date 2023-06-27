@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import './styles/App.css';
 
 import Login from './Login'
@@ -58,7 +58,7 @@ const App = () => {
           case "auth/weak-password":
             setPasswordError(err.message);
             break;
-        };
+        }
       });
   };
 
