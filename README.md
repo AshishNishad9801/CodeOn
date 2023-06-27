@@ -109,4 +109,4 @@ Follow these steps to run the CodeOn website on your local machine:
 
 5. Run `npm run build`
 
-6. To start the server, run `nodemon server.js` in the project's root directory (By default it runs on localhost:/5000)
+6. To start the server, run `nodemon server.js` in the project's root directory (By default it runs on localhost:5000)
