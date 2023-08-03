@@ -4,27 +4,47 @@
 
   
 
+  
+
 ![CodeOn](https://user-images.githubusercontent.com/76893116/185206393-101abb1b-8a0f-4aa7-8ea4-c48c3a7ba57e.png)
+
+  
 
   
 
 ## Technology Stack
 
+  
+
 - React
+
+  
 
 - Node.js
 
+  
+
 - Express.js
+
+  
 
 - Socket.io
 
+  
+
 - Firebase
+
+  
 
 - APIs
 
   
 
+  
+
 ---
+
+  
 
   
 
@@ -32,15 +52,16 @@ CodeOn is a cutting-edge real-time collaborative web application designed to fac
 
   
 
+  
+
 ## Key Features
 
   
 
-### Login/Signup Page
-
   
 
-![Login/Signup](https://user-images.githubusercontent.com/76893116/185209075-2c6a9117-e54e-4c89-bec0-a21f8dcc23af.png)
+
+  
 
   
 
@@ -48,7 +69,11 @@ CodeOn is a cutting-edge real-time collaborative web application designed to fac
 
   
 
+  
+
 ![Room Activation](https://user-images.githubusercontent.com/76893116/185209360-ac461e93-1793-45db-95d1-64e26a7163c0.png)
+
+  
 
   
 
@@ -56,7 +81,11 @@ CodeOn is a cutting-edge real-time collaborative web application designed to fac
 
   
 
+  
+
 ![Editor Interface](https://user-images.githubusercontent.com/76893116/185210384-f972f663-6cf4-4073-8967-917d1f2d59a5.png)
+
+  
 
   
 
@@ -64,7 +93,11 @@ CodeOn is a cutting-edge real-time collaborative web application designed to fac
 
   
 
+  
+
 ![Video Meet 1](https://user-images.githubusercontent.com/76893116/185211014-1ead314e-cf16-48ce-8375-8abfd30e7ba7.png)
+
+  
 
   
 
@@ -72,7 +105,11 @@ CodeOn is a cutting-edge real-time collaborative web application designed to fac
 
   
 
+  
+
 ---
+
+  
 
   
 
@@ -80,32 +117,24 @@ CodeOn is a cutting-edge real-time collaborative web application designed to fac
 
   
 
+  
+
 Follow these steps to run the CodeOn website on your local machine:
+
+  
 
   
 
 1. Clone this repository using `git clone`
 
-2. Install the required dependencies using `npm install`
-
-3. Set up the required environment variables by creating a `.env` file. It should follow the below format:
-
-
-`VITE_FIREBASE_API_KEY=`
-
-`VITE_FIREBASE_AUTH_DOMAIN=`
-
-`VITE_FIREBASE_PROJECT_ID=`
-
-`VITE_FIREBASE_STORAGE_BUCKET=`
-
-`VITE_FIREBASE_MESSAGING_SENDER_ID=`
-
-`VITE_FIREBASE_APP_ID=`
-
-`VITE_FIREBASE_MEASUREMENT_ID=`
   
 
-5. Run `npm run build`
+2. Install the required dependencies using `npm install`
 
-6. To start the server, run `npm run dev` in the project's root directory (By default it runs on localhost:5000)
+  
+
+3. Run `npm run build`
+
+  
+
+4. To start the server, run `npm run dev` in the project's root directory (By default it runs on localhost:5000)
