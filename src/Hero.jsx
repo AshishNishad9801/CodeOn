@@ -5,38 +5,32 @@ import { Toaster } from 'react-hot-toast';
 import Home from './pages/Home';
 import EditorPage from './pages/EditorPage';
 
-const Hero = ({handleLogout}) => {
+const Hero = () => {
     return (<>
-   
-                {/* <nav className="hero">
-                    <h2>Welcome</h2>
-                    <button onClick={handleLogout}>Logout</button>
-                </nav> */}
-
         <div>
-                <Toaster
-                    position="top-right"
-                    toastOptions={{
-                        success: {
-                            theme: {
-                                primary: '#4aed88',
-                            },
+            <Toaster
+                position="top-right"
+                toastOptions={{
+                    success: {
+                        theme: {
+                            primary: '#4aed88',
                         },
-                    }}
-                ></Toaster>
-            </div>
-            <BrowserRouter>
-                <Routes>
-                    <Route path="/" element={<Home />}></Route>
-                    <Route
-                        path="/editor/:roomId"
-                        element={<EditorPage />}
-                    ></Route>
-                </Routes>
-            </BrowserRouter>
+                    },
+                }}
+            ></Toaster>
+        </div>
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Home />}></Route>
+                <Route
+                    path="/editor/:roomId"
+                    element={<EditorPage />}
+                ></Route>
+            </Routes>
+        </BrowserRouter>
 
 
-        </>
+    </>
     )
 }
 
